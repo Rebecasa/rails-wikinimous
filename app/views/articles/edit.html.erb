@@ -1,0 +1,14 @@
+<h2>What would you like to add?</h2>
+
+<%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+
+
+    <%= f.submit %>
+<% end %>
+
+<%= link_to "Go back", articles_path %>
